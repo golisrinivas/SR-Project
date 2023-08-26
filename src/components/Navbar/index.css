@@ -1,0 +1,157 @@
+.logo{
+    color: #ffffff;
+    font-size: 18px;
+    font-family: "italic";
+}
+
+.nav-con{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightslategray;
+    padding: 5px; 
+}
+
+.nav-item-con{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link{
+    list-style-type: none;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Roboto';
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+.nav-link:hover{
+    color: burlywood;
+}
+
+.nav-icon{
+    color: black;
+    display: none;
+    background-color: #ffffff;
+    border-style: none;
+    border-radius: 2px;
+}
+
+.services-icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: last baseline;
+    align-items: first baseline;
+}
+
+.down-icon{
+    color: #ffffff
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    list-style-type: none;
+    
+}
+
+.dropdown-item {
+    color: burlywood;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.nav-mobile-con{
+    display: none;
+}
+
+.nav-mobile-con-close{
+    display: none;
+}
+
+.nav-mobile-list-con{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    list-style-type: none;
+}
+
+.nav-link-mobile{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Roboto";
+}
+
+.nav-link-mobile:hover{
+    color: burlywood;
+}
+
+.dropdown-mobile{
+    position: relative;
+    display: block;
+    
+}
+
+.dropdown-content-mobile{
+    display: none;
+    position: relative;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    
+    list-style-type: none;
+}
+
+.dropdown-mobile:hover .dropdown-content-mobile{
+    display: block;
+}
+
+.dropdown-item-mobile{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-item-mobile:hover{
+    color: burlywood;
+}
+
+@media screen and (max-width: 576px) {
+    .nav-item-con{
+        display: none;
+    }
+
+    .nav-icon{
+        display: block;
+    }  
+
+    .nav-mobile-con{
+        display: block;
+    }
+}
